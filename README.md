@@ -1,5 +1,5 @@
 # MotionSpot
-Object detection and tracking add-on for Motion
+Object detection and tracking add-on for the Motion cctv software
 
 A basic Python script for Motion (https://motion-project.github.io/) to add object detection and tracking capabilities using the Ultralytics Yolo model (https://docs.ultralytics.com/)
 
