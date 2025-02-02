@@ -31,4 +31,9 @@ A basic Python script for Motion (https://motion-project.github.io/) to add obje
 2. MotionSpot will keep looping over the images saved by Motion, and when it finds the requested object class or classes, it will rename the snapthot from `snapshot.jpg` to `snapthos.jpg.detection`
 3. On `movie_save`, Motion will invoke MotionSpot again, with the name of the filename of the saved movie as one of the parameters. MotionSpot will check if there are any .detection files corresponding to the event of the saved movie file. If it finds any, it will leave the move file in place. If it doesn't, it deletes it
 4. If configured to do so, MotionSpot will send alerts when detecting objects presence or movement. It will send alerts for 1st, 2nd and 4th frames with detections for each event (which equates to each movie saved by Motion). Currently Telegram and email/smtp alerts are supported
-5. Also, if configured, MotionSpot can turn on the led spotlight on the corresponding camera on detection one of the requested object classes. This has been tested with HikVision DS-2CD2347G2 cameras - the code would need adapting for other camera models.
+5. Also, if configured, MotionSpot can turn on the led spotlight on the corresponding camera on detection of one of the requested object classes. This has been tested with HikVision DS-2CD2347G2 cameras - the code would need adapting for other camera models.
+
+## Hardware requirements
+
+1. As a very general reference point, I've tested MotionSpot with an Intel Core i3-2120 processor which just about managed to keep up with one camera at 1280x720 resolution and 5fps.
+2. MotionSpot is also currently in use with an AMD Ryzen AMD Ryzen 5 PRO 5675U with 10 cameras at 1280x720 at 5fps and it copes reasonably well with almost realtime alerts. It occasionally starts to fall behind by 1-2 minutes if there is movement detected on too many cameras at the same time.
