@@ -7,7 +7,7 @@ A basic Python script for Motion (https://motion-project.github.io/) to add obje
 1. Python3
 2. A number of Python modules, which might already be present on your system: numpy, signal, pathlib, psutil, smtplib, requests, email, PIL, io
 3. Ultralytics Python module from Ultralytics (www.ultralytics.com)
-4. One of the Yolo models - the current code has been tested with yolov8n and yolov8s
+4. One of the Yolo models - the current code has been tested with yolov8n and yolov8s - available down the page here in the performance tab: https://docs.ultralytics.com/models/yolov8/#performance-metrics
 
 ## Installation instructions
 
