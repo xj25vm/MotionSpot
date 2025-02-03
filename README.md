@@ -7,12 +7,12 @@ A basic Python script for Motion (https://motion-project.github.io/) to add obje
 1. Python3
 2. A number of Python modules, which might already be present on your system: numpy, signal, pathlib, psutil, smtplib, requests, email, PIL, io
 3. Ultralytics Python module from Ultralytics (www.ultralytics.com)
-4. One of the Yolo models - the current code has been tested with yolov8n and yolov8s - available down the page here in the performance tab: https://docs.ultralytics.com/models/yolov8/#performance-metrics
+4. One of the Yolo pre-trained models - the current code has been tested with yolov8n and yolov8s
 
 ## Installation instructions
 
 1. copy motionspot.py and motionspotcfg.py to /etc/motion (or /etc/motioneye, if using MotionEye)
-2. Download one of the Yolo models to /etc/motion (or /etc/motioneye) from here: https://github.com/ultralytics/ultralytics/blob/main/docs/en/tasks/detect.md The current code has been tested with Yolov8 nano and small.
+2. Download one of the Yolo models to /etc/motion (or /etc/motioneye) from here (lower down the page under Performance section): (https://docs.ultralytics.com/models/yolov8/ ) The current code has been tested with Yolov8 nano and small (yolov8n.pt and yolov8s.pt).
 3. Install Python modules (instructions will vary based on your distribution):  
  a. `pip install ultalytics`  
  b. `pip install numpy`  
