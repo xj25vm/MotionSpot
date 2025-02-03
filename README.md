@@ -21,7 +21,7 @@ A basic Python script for Motion (https://motion-project.github.io/) to add obje
    a. for `on_event_start`, add the followint to existing code:  
    `/usr/bin/python3 /etc/motion/motionspot.py`  
    b. for `on_movie_end`, add the following to existing code:  
-   `/usr/bin/python3 /etc/motioneye/motionspot.py file_save %$ %v %f`  
+   `/usr/bin/python3 /etc/motion/motionspot.py file_save %$ %v %f`  
    c. set `picture_output on`  
    d. set `picture_filename` to: `images/%v.[camera_name].%H-%M-%S.%q` - replace [camera_name] with actual camera name. It is important not to use full stop (.) in the camera name - as it is used for delimiting fields in the name of saved snapshots  
    e. (optional) - configure `images` to mount off tmpfs in ram - to avoid excessive writes to permanent storage, and possibly speed processing up
